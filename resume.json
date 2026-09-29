@@ -1,0 +1,194 @@
+{
+  "basics": {
+    "name": "Taha Khurram",
+    "shortName": "TK",
+    "label": "Software Engineering Student",
+    "headline": "Building practical web, application, and database solutions with a growing software engineering mindset.",
+    "summary": "I am a Software Engineering student based in Karachi, Pakistan, currently pursuing my BS in Computer Science at GU Tech while strengthening my skills through practical projects and modern web development training. My foundation includes HTML, CSS, JavaScript, C#, PHP, SQL, and MERN stack technologies. I enjoy turning ideas into responsive applications, learning through real-world problem solving, and building user-focused digital solutions.",
+    "location": {
+      "country": "Pakistan",
+      "countryCode": "PK",
+      "region": "Karachi"
+    },
+    "email": "taha.1khurram@gmail.com",
+    "availability": "Open to internships, junior developer roles, and collaborative learning opportunities.",
+    "leadershipNote": "I am motivated by practical learning, continuous improvement, and building software that solves real problems with clarity and reliability.",
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "Taha Khurram",
+        "url": "https://www.linkedin.com/in/taha-khurram-developer/",
+        "icon": "fa-brands fa-linkedin-in"
+      },
+      {
+        "network": "GitHub",
+        "username": "tahakhurram707889",
+        "url": "https://github.com/tahakhurram707889",
+        "icon": "fa-brands fa-github"
+      }
+    ]
+  },
+  "about": {
+    "intro": [
+      "Hi, I am Taha Khurram, a Software Engineering student and aspiring developer from Karachi, Pakistan. I am currently pursuing my BS in Computer Science at GU Tech while building practical experience in web development, application design, and software problem solving.",
+      "My learning journey includes HTML, CSS, JavaScript, C#, PHP, SQL, and MERN stack development. I enjoy creating responsive interfaces, working with real data, and transforming concepts into functional software solutions that are easy to use and maintain.",
+      "I am continuously improving my technical foundation, design thinking, and debugging abilities through academic work, training, and personal projects that reflect the kind of developer I want to become."
+    ],
+    "strengths": [
+      "Responsive front-end development with HTML, CSS, JavaScript, React, and Bootstrap",
+      "Database design and back-end logic using SQL, PHP, Laravel, and modern APIs",
+      "Project-based problem solving with a focus on debugging, logic, and reliability",
+      "Continuous learning in full-stack workflows, UI/UX, and application architecture"
+    ]
+  },
+  "skills": [
+    {
+      "category": "Languages & Frameworks",
+      "items": [
+        "JavaScript",
+        "React",
+        "HTML",
+        "CSS",
+        "C#",
+        "PHP",
+        "Laravel",
+        "SQL",
+        "Bootstrap",
+        "Git",
+        "GitHub",
+        "Node.js",
+        "Express.js",
+        "MongoDB"
+      ]
+    },
+    {
+      "category": "Development & Design",
+      "items": [
+        "Responsive UI Design",
+        "REST APIs",
+        "Database Design",
+        "Object-Oriented Programming",
+        "Debugging",
+        "Problem Solving"
+      ]
+    },
+    {
+      "category": "Tools & Workflow",
+      "items": [
+        "VS Code",
+        "GitHub",
+        "Postman",
+        "Figma",
+        "npm",
+        "MVC Patterns",
+        "CLI Tools"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "title": "Portfolio Website",
+      "description": "A personal portfolio website built to present technical skills, academic background, and project work through a clean and modern interface.",
+      "outcome": "Created a professional online profile to showcase my work and strengthen my digital presence for opportunities and networking.",
+      "stack": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Responsive Design"
+      ],
+      "liveUrl": "#",
+      "codeUrl": "https://github.com/tahakhurram707889"
+    },
+    {
+      "title": "MERN Stack E-Commerce Application",
+      "description": "A full-stack e-commerce application built with the MERN stack featuring product catalog, shopping cart, user authentication, and an admin order management dashboard.",
+      "outcome": "Implemented a responsive e-commerce platform with CRUD operations, payment integration, and modern React state management using Context API.",
+      "stack": [
+        "MongoDB",
+        "Express.js",
+        "React",
+        "Node.js",
+        "JavaScript",
+        "REST APIs"
+      ],
+      "liveUrl": "#",
+      "codeUrl": "https://github.com/tahakhurram707889"
+    }
+  ],
+  "certificates": [
+    {
+      "title": "MERN Stack Development",
+      "issuer": "Saylani Mass IT Training",
+      "date": "2025-present",
+      "description": "Completed training focused on modern web development, JavaScript, React, and full-stack project learning.",
+      "url": "#"
+    },
+    {
+      "title": "Web Development Training",
+      "issuer": "Aptech Learning Pakistan",
+      "date": "2024",
+      "description": "Built a foundation in HTML, CSS, JavaScript, and structured application development.",
+      "url": "#"
+    },
+    {
+      "title": "Software Engineering Diploma",
+      "issuer": "Aptech Learning Pakistan",
+      "date": "2026",
+      "description": "Gained core exposure to programming fundamentals and software development practices.",
+      "url": "#"
+    }
+  ],
+  "education": [
+    {
+      "institution": "GU TECH Al Ghazali University",
+      "area": "Computer Science",
+      "studyType": "Bachelor in Computer Science (BS)",
+      "detailsLabel": "Core Courses",
+      "details": [
+        "Object-Oriented Programming",
+        "Database Systems",
+        "Operating Systems",
+        "Computer Networks",
+        "Software Engineering"
+      ],
+      "startDate": "2026-present"
+    },
+    {
+      "institution": "Aptech Learning Pakistan",
+      "area": "Computer Science",
+      "studyType": "DAE (HDSE Higher Diploma in Software Engineering)",
+      "detailsLabel": "Course Tracks",
+      "details": [
+        "Web Development",
+        "Basic C#",
+        "Basic PHP",
+        "Basic SQL",
+        "Basic JavaScript"
+      ],
+      "startDate": "2023-08-22",
+      "endDate": "2026-08-22"
+    },
+    {
+      "institution": "Saylani Mass IT Training",
+      "area": "Computer Science",
+      "studyType": "MERN Stack Developer",
+      "detailsLabel": "Course Tracks",
+      "details": [
+        "Modern Web Development",
+        "Advanced JavaScript",
+        "React.js"
+      ],
+      "startDate": "2026-04-08-present"
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Fluent"
+    },
+    {
+      "language": "Urdu",
+      "fluency": "Native"
+    }
+  ]
+}

@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+  <!-- Primary Meta Tags -->
+  <title>Taha Khurram | Software Engineering Student</title>
+  <meta name="title" content="Taha Khurram | Software Engineering Student" />
+  <meta name="description"
+    content="Portfolio of Taha Khurram - Software Engineering student from Karachi, Pakistan, building practical web and application solutions." />
+  <meta name="author" content="Taha Khurram" />
+  <meta name="theme-color" content="#0a0f1d" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Taha Khurram | Software Engineering Student" />
+  <meta property="og:description"
+    content="Software Engineering student based in Karachi, Pakistan, improving my skills in web development, application building, and software problem solving." />
+
+  <!-- Favicon Icon (SVG Data URI) -->
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='24' fill='%236366f1'/><text x='50%' y='55%' dominant-baseline='middle' text-anchor='middle' fill='%23ffffff' font-family='sans-serif' font-weight='800' font-size='44'>TK</text></svg>" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+
+  <!-- Font Awesome 6 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- Scroll Progress Indicator Bar -->
+  <div id="scroll-progress" class="scroll-progress" aria-hidden="true"></div>
+
+  <!-- Ambient Background Glow Accents -->
+  <div class="ambient-bg" aria-hidden="true">
+    <div class="glow-orb orb-1"></div>
+    <div class="glow-orb orb-2"></div>
+    <div class="glow-orb orb-3"></div>
+  </div>
+
+  <!-- Global Toast Notification Container -->
+  <div id="toast-container" class="toast-container" aria-live="polite"></div>
+
+  <!-- Navigation Bar -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container container">
+      <a href="#hero" class="brand-logo" id="brand-logo" aria-label="Home">
+        <span class="logo-badge" id="logo-shortname">TK</span>
+        <span class="logo-name" id="logo-fullname">Taha Khurram</span>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav class="nav-links" id="nav-links" aria-label="Main Navigation">
+        <a href="#about" class="nav-link" data-nav="about">About</a>
+        <!-- <a href="#experience" class="nav-link" data-nav="experience">Experience</a> -->
+        <a href="#skills" class="nav-link" data-nav="skills">Skills</a>
+        <a href="#projects" class="nav-link" data-nav="projects">Projects</a>
+        <a href="#certifications" class="nav-link" data-nav="certifications">Certifications</a>
+        <a href="#education" class="nav-link" data-nav="education">Education</a>
+        <a href="#contact" class="nav-link" data-nav="contact">Contact</a>
+      </nav>
+
+      <!-- Right Header Actions (Theme Toggle & CTA) -->
+      <div class="nav-actions">
+        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle light or dark theme" title="Toggle theme">
+          <i class="fa-solid fa-moon moon-icon"></i>
+          <i class="fa-solid fa-sun sun-icon"></i>
+        </button>
+
+        <button id="print-resume-btn" class="btn btn-outline btn-sm print-hide" title="Print or save PDF resume">
+          <i class="fa-solid fa-file-pdf"></i>
+          <span class="btn-text">CV</span>
+        </button>
+
+        <a href="#contact" class="btn btn-primary btn-sm hire-btn">
+          <span>Let's Talk</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button id="mobile-menu-btn" class="mobile-menu-btn" aria-label="Open mobile menu" aria-expanded="false">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Dropdown Navigation -->
+  <div id="mobile-menu" class="mobile-menu" aria-hidden="true">
+    <div class="mobile-menu-inner">
+      <nav class="mobile-nav-links" id="mobile-nav-links">
+        <a href="#about" class="mobile-link" data-nav="about"><i class="fa-solid fa-user"></i> About</a>
+        <a href="#experience" class="mobile-link" data-nav="experience"><i class="fa-solid fa-briefcase"></i>
+          Experience</a>
+        <a href="#skills" class="mobile-link" data-nav="skills"><i class="fa-solid fa-code"></i> Skills</a>
+        <a href="#projects" class="mobile-link" data-nav="projects"><i class="fa-solid fa-layer-group"></i> Projects</a>
+        <a href="#certifications" class="mobile-link" data-nav="certifications"><i class="fa-solid fa-award"></i>
+          Certifications</a>
+        <a href="#education" class="mobile-link" data-nav="education"><i class="fa-solid fa-graduation-cap"></i>
+          Education</a>
+        <a href="#contact" class="mobile-link" data-nav="contact"><i class="fa-solid fa-paper-plane"></i> Contact</a>
+      </nav>
+      <div class="mobile-menu-footer">
+        <div class="data-status-badge" id="data-status-badge-mobile">
+          <span class="pulse-dot"></span>
+          <span class="status-text">resume.json loaded</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main id="main-content">
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section section">
+      <div class="container hero-container" id="hero-container">
+        <!-- Rendered dynamically via JavaScript with resume.json data -->
+        <div class="hero-skeleton skeleton-card">
+          <div class="skeleton-line" style="width: 40%"></div>
+          <div class="skeleton-title"></div>
+          <div class="skeleton-line" style="width: 80%"></div>
+          <div class="skeleton-line" style="width: 60%"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quick Highlights / Metric Counter Section -->
+    <section class="metrics-section section-tight">
+      <div class="container">
+        <div class="metrics-grid" id="metrics-grid">
+          <!-- Populated dynamically via JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- About & Leadership Philosophy Section -->
+    <section id="about" class="about-section section">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag"><i class="fa-solid fa-fingerprint"></i> About Me</div>
+          <h2 class="section-title">Learning, Building & Growing as a Software Developer</h2>
+          <p class="section-subtitle">Focused on practical development, continuous learning, and creating dependable digital solutions.</p>
+        </div>
+
+        <div class="about-grid">
+          <!-- Narrative Column -->
+          <div class="about-story glass-card">
+            <h3 class="card-title">
+              <i class="fa-solid fa-compass-drafting text-accent"></i> Background & Focus
+            </h3>
+            <div id="about-intro-container" class="about-paragraphs">
+              <!-- Dynamically populated intro paragraphs -->
+            </div>
+
+            <!-- Leadership Quote Box -->
+            <div class="leadership-callout" id="leadership-callout">
+              <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+              <p class="quote-text" id="leadership-note-text"></p>
+              <div class="quote-badge">
+                <i class="fa-solid fa-shield-halved"></i> Leadership Philosophy
+              </div>
+            </div>
+          </div>
+
+          <!-- Key Strengths Column -->
+          <div class="about-strengths glass-card">
+            <h3 class="card-title">
+              <i class="fa-solid fa-bolt-lightning text-accent"></i> Core Capabilities
+            </h3>
+            <p class="card-subtitle">Strategic pillars that shape engineering organizations and delivery systems:</p>
+            <ul class="strengths-list" id="strengths-list">
+              <!-- Dynamically populated strengths -->
+            </ul>
+
+            <!-- Live Status & Location Card -->
+            <div class="presence-card">
+              <div class="presence-item">
+                <div class="presence-icon"><i class="fa-solid fa-map-location-dot"></i></div>
+                <div class="presence-details">
+                  <span class="presence-label">Location</span>
+                  <span class="presence-value" id="about-location">Karachi, Pakistan</span>
+                </div>
+              </div>
+              <div class="presence-item">
+                <div class="presence-icon"><i class="fa-solid fa-clock"></i></div>
+                <div class="presence-details">
+                  <span class="presence-label">Local Time (PKT)</span>
+                  <span class="presence-value font-mono" id="live-time-display">--:--:--</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience & Career Journey Section -->
+    <!-- <section id="experience" class="experience-section section">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag"><i class="fa-solid fa-briefcase"></i> Career Journey</div>
+          <h2 class="section-title">Learning Experience & Practical Development</h2>
+          <p class="section-subtitle">Hands-on training, project-based problem solving, and growing core software engineering skills.</p>
+        </div>
+
+        <div class="experience-timeline" id="experience-timeline">
+          <!-- Dynamically populated experience cards from resume.json -->
+        </div>
+      </div>
+    </section> -->
+
+    <!-- Skills & Tech Ecosystem Section -->
+    <section id="skills" class="skills-section section">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag"><i class="fa-solid fa-code"></i> Technical Stack</div>
+          <h2 class="section-title">Languages, Tools & Development Skills</h2>
+          <p class="section-subtitle">A practical toolkit for building user-focused web applications, APIs, and database-driven systems.</p>
+        </div>
+
+        <!-- Interactive Skill Controls: Category Tabs & Real-time Search -->
+        <div class="skills-toolbar">
+          <div class="skill-category-filters" id="skill-category-filters" role="tablist"
+            aria-label="Filter skills by category">
+            <button class="skill-filter-btn active" data-category="all" role="tab" aria-selected="true">
+              <i class="fa-solid fa-border-all"></i> All Competencies
+            </button>
+            <button class="skill-filter-btn" data-category="Languages & Frameworks" role="tab" aria-selected="false">
+              <i class="fa-solid fa-code"></i> Languages & Frameworks
+            </button>
+            <button class="skill-filter-btn" data-category="Test Automation & QA Tools" role="tab"
+              aria-selected="false">
+              <i class="fa-solid fa-vial-virus"></i> Test Automation & QA
+            </button>
+            <button class="skill-filter-btn" data-category="DevOps, CI/CD & Cloud" role="tab" aria-selected="false">
+              <i class="fa-solid fa-server"></i> DevOps & Cloud
+            </button>
+          </div>
+
+          <div class="skills-search-box">
+            <i class="fa-solid fa-magnifying-glass search-icon"></i>
+            <input type="text" id="skill-search-input" class="skill-search-input"
+              placeholder="Search technical skills (e.g. Java, Docker, Selenium)..." aria-label="Search skills" />
+            <button id="skill-search-clear" class="skill-search-clear" aria-label="Clear skill search"
+              style="display: none;">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Interactive Hint -->
+        <div class="skill-interactive-hint">
+          <i class="fa-solid fa-circle-info"></i>
+          <span>Click any skill chip below to highlight associated projects in the showcase!</span>
+          <span class="active-skill-indicator" id="active-skill-indicator" style="display: none;">
+            Filtered by: <strong id="active-skill-name"></strong>
+            <button id="clear-skill-filter-btn" class="clear-skill-filter-btn"><i class="fa-solid fa-xmark"></i>
+              Clear</button>
+          </span>
+        </div>
+
+        <div class="skills-wrapper">
+          <div class="skills-categories-grid" id="skills-container">
+            <!-- Dynamically populated skills -->
+          </div>
+
+          <!-- Additional Development Focus Badges -->
+          <div class="stack-domains-card glass-card">
+            <h4 class="domain-title"><i class="fa-solid fa-diagram-project"></i> Development Focus</h4>
+            <div class="domain-tags">
+              <span class="domain-tag"><i class="fa-solid fa-globe"></i> Front-End Development</span>
+              <span class="domain-tag"><i class="fa-solid fa-database"></i> Database & SQL</span>
+              <span class="domain-tag"><i class="fa-solid fa-code"></i> Back-End Logic</span>
+              <span class="domain-tag"><i class="fa-solid fa-mobile-screen"></i> Responsive Interfaces</span>
+              <span class="domain-tag"><i class="fa-solid fa-bug"></i> Debugging & Problem Solving</span>
+              <span class="domain-tag"><i class="fa-solid fa-rocket"></i> Learning & Growth</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Projects Showcase Section -->
+    <section id="projects" class="projects-section section">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag"><i class="fa-solid fa-folder-open"></i> Portfolio</div>
+          <h2 class="section-title">Featured Projects & Learning Work</h2>
+          <p class="section-subtitle">Practical projects that reflect my growth in web development, database work, and real-world software thinking.</p>
+        </div>
+
+        <!-- Project Filter Controls -->
+        <div class="project-filters" id="project-filters">
+          <button class="project-filter-pill active" data-filter="all">All Projects</button>
+          <button class="project-filter-pill" data-filter="platform">Web Projects</button>
+          <button class="project-filter-pill" data-filter="desktop">App Systems</button>
+          <button class="project-filter-pill" data-filter="pipeline">Learning Builds</button>
+        </div>
+
+        <!-- Project Cards Grid -->
+        <div class="projects-grid" id="projects-grid">
+          <!-- Dynamically populated projects from resume.json -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Certifications & Credentials Section -->
+    <section id="certifications" class="certifications-section section">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag"><i class="fa-solid fa-certificate"></i> Verified Badges</div>
+          <h2 class="section-title">Training & Certifications</h2>
+          <p class="section-subtitle">Focused learning milestones that strengthened my foundation in web development, software engineering, and modern technologies.</p>
+        </div>
+
+        <div class="certifications-grid" id="certifications-grid">
+          <!-- Dynamically populated certificates from resume.json -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Education & Foundations Section -->
+    <section id="education" class="education-section section">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag"><i class="fa-solid fa-graduation-cap"></i> Academic Foundations</div>
+          <h2 class="section-title">Education & Continuous Learning</h2>
+          <p class="section-subtitle">Formal training in computer science and project-based learning in software development.</p>
+        </div>
+
+        <div class="timeline-container" id="education-timeline">
+          <!-- Dynamically populated education cards -->
+        </div>
+
+        <!-- Languages Spoken Card -->
+        <div class="languages-box glass-card">
+          <div class="languages-header">
+            <i class="fa-solid fa-language text-accent"></i>
+            <h3>Languages & Communication</h3>
+          </div>
+          <div class="languages-list" id="languages-list">
+            <!-- Dynamically populated languages -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact & Connect Section -->
+    <section id="contact" class="contact-section section">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag"><i class="fa-solid fa-envelope-open-text"></i> Get In Touch</div>
+          <h2 class="section-title">Let’s Build Something Exceptional</h2>
+          <p class="section-subtitle">Interested in discussing quality architecture, consulting, or leadership
+            opportunities?</p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Contact Info & Direct Links Card -->
+          <div class="contact-info-card glass-card">
+            <h3 class="contact-heading">Direct Channels</h3>
+            <p class="contact-description">
+              Feel free to reach out directly via email or connect through professional networks.
+            </p>
+
+            <div class="contact-channels" id="contact-channels">
+              <!-- Dynamically populated email, location, profiles -->
+            </div>
+
+            <!-- Social Links Row -->
+            <div class="social-links-wrapper">
+              <span class="social-title">Connect Online</span>
+              <div class="social-links" id="social-links">
+                <!-- Dynamically populated profile links -->
+              </div>
+            </div>
+
+            <div class="availability-card" id="contact-availability-box">
+              <i class="fa-solid fa-circle-check text-success"></i>
+              <div class="availability-text" id="contact-availability-text">
+                <!-- Injected via JS -->
+              </div>
+            </div>
+          </div>
+
+          <!-- Interactive Message Form -->
+          <div class="contact-form-card glass-card">
+            <h3 class="contact-heading">Send a Direct Message</h3>
+            <p class="contact-description">
+              Leave a note below and I will get back to you promptly.
+            </p>
+
+            <form id="contact-form" class="contact-form" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="form-name">Your Name <span class="required">*</span></label>
+                  <div class="input-with-icon">
+                    <i class="fa-regular fa-user"></i>
+                    <input type="text" id="form-name" name="name" class="form-input" placeholder="e.g. Sarah Jenkins"
+                      required />
+                  </div>
+                  <span class="form-error" id="name-error"></span>
+                </div>
+
+                <div class="form-group">
+                  <label for="form-email">Your Email <span class="required">*</span></label>
+                  <div class="input-with-icon">
+                    <i class="fa-regular fa-envelope"></i>
+                    <input type="email" id="form-email" name="email" class="form-input"
+                      placeholder="e.g. sarah@example.com" required />
+                  </div>
+                  <span class="form-error" id="email-error"></span>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="form-subject">Subject</label>
+                <div class="input-with-icon">
+                  <i class="fa-regular fa-bookmark"></i>
+                  <input type="text" id="form-subject" name="subject" class="form-input"
+                    placeholder="Project Collaboration / Internship Inquiry" />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="form-message">Message <span class="required">*</span></label>
+                <textarea id="form-message" name="message" class="form-textarea" rows="4"
+                  placeholder="Share a few details about your project, timeline, or inquiry..." required></textarea>
+                <span class="form-error" id="message-error"></span>
+              </div>
+
+              <button type="submit" id="submit-btn" class="btn btn-primary btn-block">
+                <i class="fa-solid fa-paper-plane"></i>
+                <span>Send Message</span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <span class="logo-badge" id="footer-logo-badge">TK</span>
+          <span class="footer-name" id="footer-fullname">Taha Khurram</span>
+          <span class="footer-dot">•</span>
+          <span class="footer-role" id="footer-label">Software Engineer</span>
+        </div>
+
+        <div class="data-indicator-pill" id="footer-data-indicator" title="Data dynamically fetched from resume.json">
+          <span class="pulse-dot active"></span>
+          <span id="data-source-text">Dynamic resume.json</span>
+        </div>
+      </div>
+
+      <div class="footer-divider"></div>
+
+      <div class="footer-bottom">
+        <p class="copyright-text">
+          &copy; <span id="current-year"></span> <span id="footer-copy-name">Taha Khurram</span>. Crafted with dynamic
+          HTML, modern CSS & vanilla JavaScript.
+        </p>
+
+        <div class="footer-links">
+          <a href="#hero" class="back-to-top-btn" aria-label="Back to top">
+            <span>Back to top</span>
+            <i class="fa-solid fa-chevron-up"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Project Details Modal (for deep dive) -->
+  <div id="project-modal" class="modal-backdrop" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-dialog glass-card">
+      <button class="modal-close-btn" id="modal-close-btn" aria-label="Close modal">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <div class="modal-content" id="modal-content">
+        <!-- Rendered dynamically -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Vanilla JavaScript Logic -->
+  <script src="app.js"></script>
+</body>
+
+</html>
